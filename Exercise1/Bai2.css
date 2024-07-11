@@ -14,3 +14,9 @@ input {
   margin-right: 5px;
   margin-left: 5px;
 }
+.scrollbar-container {
+  width: 300px;
+  height: 100px;
+  overflow: auto;
+  position: relative;
+}

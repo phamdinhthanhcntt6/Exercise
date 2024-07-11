@@ -1,0 +1,98 @@
+import { data3 } from "./data3";
+import "./Bai3.css";
+function Bai3() {
+  function Status() {
+    return (
+      <div style={{ backgroundColor: "green", borderRadius: 20 }}>
+        <div
+          style={{
+            padding: 1,
+            textAlign: "center",
+            paddingLeft: 0,
+            paddingRight: 0,
+          }}
+        >
+          Done
+        </div>
+      </div>
+    );
+  }
+  function Button() {
+    return (
+      <input
+        type="button"
+        value="..."
+        style={{ borderRadius: 30, height: 20 }}
+      />
+    );
+  }
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <div
+        style={{
+          padding: 10,
+        }}
+      >
+        <div className="header">
+          <input type="search" />
+          <div style={{ width: 10 }}></div>
+          <select>
+            <option>1</option>
+            <option>2</option>
+          </select>
+          <div style={{ width: 10 }}></div>
+          <input type="datetime-local" />
+        </div>
+        <div>
+          <a href="#" style={{ float: "right", marginTop: -20 }}>
+            Xem huong dan
+          </a>
+        </div>
+      </div>
+      <div className="content">
+        <table>
+          <tr
+            style={{
+              backgroundColor: "#f6f6f7",
+              width: "100%",
+              borderBottomColor: "red",
+              borderBottomWidth: 1,
+            }}
+          >
+            <th style={{ width: "2%" }}>#</th>
+            <th style={{ width: "10%" }}>Ngay xuat ban</th>
+            <th style={{ width: "10%" }}>Hinh dai dien</th>
+            <th style={{ textAlign: "left" }}>Ten bai viet</th>
+            <th style={{ width: "5%" }}>Luot xem</th>
+            <th style={{ width: "5%" }}>Chia se</th>
+            <th style={{ width: "5%" }}>Trang thai</th>
+            <th style={{ width: "5%" }}>Thao tac</th>
+          </tr>
+          {data3.map((item) => (
+            <tr key={item.id}>
+              <td>{item.a}</td>
+              <td>{item.b}</td>
+              <td>{item.c}</td>
+              <td>{item.d}</td>
+              <td style={{ textAlign: "right" }}>{item.e}</td>
+              <td style={{ textAlign: "right" }}>{item.f}</td>
+              <td style={{ textAlign: "right" }}>
+                <Status />
+              </td>
+              <td style={{ textAlign: "center" }}>
+                <Button />
+              </td>
+            </tr>
+          ))}
+        </table>
+      </div>
+    </div>
+  );
+}
+
+export default Bai3;
