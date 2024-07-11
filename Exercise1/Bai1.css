@@ -8,14 +8,12 @@ img {
 blockquote {
   margin-top: -20px;
 }
-p {
-  line-height: 1%;
-}
+
 a {
   font-style: normal;
   text-decoration: underline;
   color: blue;
-  line-height: 8px;
+  line-height: 0px;
   display: flex;
   flex-direction: row;
   display: inline;
@@ -31,4 +29,8 @@ ul {
 .icon {
   height: 24px;
   width: 24px;
+}
+.span {
+  text-transform: uppercase;
+  line-height: 14px;
 }
