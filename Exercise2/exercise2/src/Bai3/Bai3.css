@@ -18,3 +18,14 @@ td,
 table {
   border: 1px solid black;
 }
+.icon {
+  height: 20px;
+  width: 20px;
+}
+.buttonMore {
+  border: none;
+  background-color: white;
+}
+.buttonMore:hover {
+  background-color: gray;
+}

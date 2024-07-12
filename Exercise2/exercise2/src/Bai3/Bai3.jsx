@@ -1,5 +1,6 @@
 import { data3 } from "./data3";
 import "./Bai3.css";
+import myImage from "./assets/more.png";
 function Bai3() {
   function Status() {
     return (
@@ -19,11 +20,14 @@ function Bai3() {
   }
   function Button() {
     return (
-      <input
-        type="button"
-        value="..."
-        style={{ borderRadius: 30, height: 20 }}
-      />
+      <button
+        className="buttonMore"
+        onClick={() => {
+          console.log("adasd");
+        }}
+      >
+        <img src={myImage} class="icon" alt="dot" />
+      </button>
     );
   }
   return (
@@ -50,7 +54,7 @@ function Bai3() {
         </div>
         <div>
           <a href="#" style={{ float: "right", marginTop: -20 }}>
-            Xem huong dan
+            Xuat thong ke
           </a>
         </div>
       </div>
