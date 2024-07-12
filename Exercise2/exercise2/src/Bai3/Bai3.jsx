@@ -4,7 +4,7 @@ import myImage from "./assets/more.png";
 function Bai3() {
   function Status() {
     return (
-      <div style={{ backgroundColor: "green", borderRadius: 20 }}>
+      <div style={{ backgroundColor: "green", borderRadius: 5 }}>
         <div
           style={{
             padding: 1,
@@ -64,21 +64,19 @@ function Bai3() {
             style={{
               backgroundColor: "#f6f6f7",
               width: "100%",
-              borderBottomColor: "red",
-              borderBottomWidth: 1,
             }}
           >
             <th style={{ width: "2%" }}>#</th>
-            <th style={{ width: "10%" }}>Ngay xuat ban</th>
-            <th style={{ width: "10%" }}>Hinh dai dien</th>
-            <th style={{ textAlign: "left" }}>Ten bai viet</th>
-            <th style={{ width: "5%" }}>Luot xem</th>
-            <th style={{ width: "5%" }}>Chia se</th>
-            <th style={{ width: "5%" }}>Trang thai</th>
-            <th style={{ width: "5%" }}>Thao tac</th>
+            <th style={{ width: "10%" }}>Ngày xuất bản</th>
+            <th style={{ width: "10%" }}>Hình đại diện</th>
+            <th style={{ textAlign: "left" }}>Tên bài viết</th>
+            <th style={{ width: "5%" }}>Lượt xem</th>
+            <th style={{ width: "5%" }}>Chia sẻ</th>
+            <th style={{ width: "5%" }}>Trạng thái</th>
+            <th style={{ width: "5%" }}>Thao tác</th>
           </tr>
           {data3.map((item) => (
-            <tr key={item.id}>
+            <tr key={item.id} className="borderBottom">
               <td>{item.a}</td>
               <td>{item.b}</td>
               <td>{item.c}</td>
